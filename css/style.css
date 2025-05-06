@@ -1,6 +1,5 @@
 @import url("./reset.css");
 .container {
-    /* border: 1px solid black; */
     border-radius: 5%;
     background-color: lightblue;
     display: flex;
@@ -10,28 +9,28 @@
     padding: 5%;
 }
 img {
-    height: 200px;
-    width: 150px;
+    height: 90%;
+    width: 90%;
     border-radius: 100%;
     padding: 5%;
+    margin: 5%;
 }
 .img-box {
-    /* border: 1px solid black; */
     background-color: paleturquoise;
     padding: 5%;
     margin: 5%;
     border-radius: 5%;
+    width: 50%;
 }
 .details {
-    /* border: 1px solid black; */
     background-color: rgb(202, 180, 247);
     padding: 5%;
     margin: 5%;
     border-radius: 5%;
     width: 90%;
+    justify-content: center;
 }
 .contact {
-    /* border: 1px solid black; */
     background-color: rgb(169, 137, 233);
     border-radius: 5%;
     padding: 5%;
@@ -41,7 +40,6 @@ img {
     align-items: center;    
 }
 .company-name {
-    /* border: 1px solid black; */
     background-color: rgb(169, 137, 233);
     border-radius: 5%;
     padding: 5%;
@@ -49,4 +47,30 @@ img {
     display: flex;
     flex-direction: column;  
     align-items: center;
+}
+@media(min-width: 500px) {
+    .details {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-box {
+        width: 50%;
+    }
+}
+@media(min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .details {
+        flex-direction: column;
+        width: 50%;
+        height: 90%;
+    }
+    .img-box {
+        width: 40%;
+    }
+    img {
+        width: 90%;
+        height: 90%;
+    }   
 }
